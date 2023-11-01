@@ -1,9 +1,81 @@
 // Import Google fonts
-@import url('https://fonts.googleapis.com/css?family=Nunito:400,700|Work+Sans:400,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Raleway:wght@300&family=Roboto:wght@300;400;700&display=swap');
 
 // Define fonts for body and headers
-$body-font: "Work Sans", "Helvetica", "sans-serif";
-$headers-font: "Nunito", "Helvetica", "sans-serif";
+$body-font: "Roboto", "Helvetica", "sans-serif";
+$headers-font: "Inter", "Helvetica", "sans-serif";
+
+@import "colors";
+@import "breakpoints";
+
+
+h1 {
+  color: $primary_base;
+  font-family: $headers-font;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  font-size: 2rem;
+
+  @include media-min($large) {
+    font-size: 2.5rem;
+  }
+}
+
+h2 {
+  color: $secondary_base;
+  font-family: $headers-font;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  font-size: 1.25rem;
+
+  @include media-min($large) {
+    font-size: 1.5rem;
+  }
+}
+
+h3 {
+  color: $black;
+  font-family: Inter;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+
+  @include media-min($large) {
+    font-size: 1.25rem;
+  }
+}
+
+p {
+  color: $gray;
+  font-family: $body-font;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.4rem;
+  font-size: 1.425rem;
+
+  @include media-min($large) {
+    font-size: 1.125rem;
+  }
+}
+
+.btn-font {
+  color: $white;
+  font-family: Inter;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+
+  @include media-min($large) {
+    font-size: 1.5rem;
+  }
+}
+
+
 
 // To use a font file (.woff) uncomment following lines
 // @font-face {
