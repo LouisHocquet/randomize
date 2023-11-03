@@ -1,5 +1,7 @@
 // Define variables for your color scheme
 
+// Color palette
+
 // Monochrome
 $black: #1F1F1F;
 $gray: #5C5C5C; // Opacity 30% for overlay
@@ -12,6 +14,7 @@ $primary_dark: #485696;
 $primary_base: #5D6CB3;
 $primary_light: #D9E0FF;
 $primary_lightiest: #F5F7FF;
+
 // Secondary
 $secondary_dark: #D77034;
 $secondary_base: #FFA672;
@@ -20,6 +23,15 @@ $secondary_lightiest: #FFF3ED;
 
 // Background
 $background: #FFFFFC;
+
+// Bootstrap colors
+$red: #FD1015;
+$blue: #0D6EFD;
+$yellow: #FFC65A;
+$orange: #E67E22;
+$green: #1EDD88;
+$gray: #0E0000;
+$light-gray: #F4F4F4;
 
 // Dropshadow
 $box_shadow: -2px 2px 8px 0px rgba(93, 108, 179, 0.30);

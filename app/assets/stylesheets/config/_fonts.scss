@@ -9,7 +9,6 @@ $headers-font: "Inter", "Helvetica", "sans-serif";
 @import "colors";
 @import "breakpoints";
 
-
 h1 {
   color: $primary_base;
   font-family: $headers-font;
@@ -24,7 +23,7 @@ h1 {
 }
 
 h2 {
-  color: $secondary_base;
+  color: $gray;
   font-family: $headers-font;
   font-style: normal;
   font-weight: 600;
@@ -37,7 +36,7 @@ h2 {
 }
 
 h3 {
-  color: $black;
+  color: $gray;
   font-family: Inter;
   font-size: 1.125rem;
   font-style: normal;
@@ -74,8 +73,6 @@ p {
     font-size: 1.5rem;
   }
 }
-
-
 
 // To use a font file (.woff) uncomment following lines
 // @font-face {
