@@ -10,67 +10,70 @@ $headers-font: "Inter", "Helvetica", "sans-serif";
 @import "breakpoints";
 
 h1 {
-  color: $primary_base;
   font-family: $headers-font;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
   line-height: normal;
-  font-size: 2rem;
+  // font-size: 2rem;
 
   @include media-min($large) {
-    font-size: 2.5rem;
+    // font-size: 2.5rem;
   }
 }
 
+body h1 {
+  color: $primary_base;
+}
+
 h2 {
-  color: $gray;
+  // color: $gray;
   font-family: $headers-font;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
-  font-size: 1.25rem;
+  // font-size: 1.25rem;
 
   @include media-min($large) {
-    font-size: 1.5rem;
+    // font-size: 1.5rem;
   }
 }
 
 h3 {
-  color: $gray;
+  // color: $gray;
   font-family: Inter;
-  font-size: 1.125rem;
+  // font-size: 1.125rem;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
 
   @include media-min($large) {
-    font-size: 1.25rem;
+    // font-size: 1.25rem;
   }
 }
 
 p {
-  color: $gray;
+  // color: $gray;
   font-family: $body-font;
   font-style: normal;
   font-weight: 300;
-  line-height: 1.4rem;
-  font-size: 1.425rem;
+  // line-height: 1.4rem;
+  // font-size: 1.425rem;
 
   @include media-min($large) {
-    font-size: 1.125rem;
+    // font-size: 1.125rem;
   }
 }
 
 .btn-font {
   color: $white;
   font-family: Inter;
-  font-size: 1.25rem;
+  // font-size: 1.25rem;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
   line-height: normal;
 
   @include media-min($large) {
-    font-size: 1.5rem;
+    // font-size: 1.5rem;
   }
 }
 

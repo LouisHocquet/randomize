@@ -3,12 +3,27 @@
   border-bottom: 0.5px solid $light_gray;
   width: 100%;
   height: 52px;
+  padding: 0 12px;
+
+  @include media-min($large) {
+    height: 72px;
+  }
 
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.navbar > svg {
+  height: 36px;
+  width: 36px;
 
   @include media-min($large) {
-    height: 72px;
+    height: 40px;
+    width: 40px;
+  }
+
+  path {
+    fill: $gray;
   }
 }
