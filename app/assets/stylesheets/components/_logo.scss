@@ -1,11 +1,11 @@
 .text-logo {
-  color: $primary_base;
-  svg path{
-    stroke: $primary_base;
-  }
-}
+  display: flex;
+  align-items: center;
 
-.text-logo {
+  height: fit-content;
+
+  border: 1px solid $gray;
+
   font-family: $headers-font;
   font-style: normal;
   font-weight: 600;
@@ -15,6 +15,12 @@
   @include media-min($large) {
     font-size: 2rem;
   }
+
+  color: $primary_base;
+  svg path{
+    stroke: $primary_base;
+  }
+
 }
 
 .text-logo svg {
