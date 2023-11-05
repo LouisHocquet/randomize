@@ -1,0 +1,53 @@
+.banner-container {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+  padding: 40px 0;
+}
+
+.banner-baseline {
+  width: 320px;
+  @include media-min($medium) {
+    width: 400px;
+  }
+  @include media-min($large) {
+    width: 600px;
+  }
+
+  h1{
+    margin-bottom: 24px;
+  }
+}
+
+.banner-CTA {
+  display: flex;
+  flex-direction: column;
+}
+
+.banner-counter {
+  margin-bottom: 24px;
+  @include media-min($large) {
+    margin-bottom: 36px;
+  }
+
+  span {
+    color : $secondary_base;
+    font-weight: 600;
+  }
+}
+
+.banner-illustration {
+  width: 100%;
+  height: 260px;
+  max-width: 600px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+
+  @include media-min($large) {
+    height: 320px;
+  }
+}

@@ -71,6 +71,7 @@ p {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+  margin: 0;
 
   @include media-min($large) {
     // font-size: 1.5rem;

@@ -1,4 +1,4 @@
-<div class="banner">
+<div class="banner-container">
   <div class="banner-baseline">
     <h1>Réserve l'inattendu</h1>
     <p>Parmi notre vaste choix d’activités. Un nouveau concept, des gens sympas ? Qui sait ce que tu découvriras ! 😊</p>
@@ -6,8 +6,13 @@
   <div class="banner-illustration">
     <%= svg_tag "paris_skyline.svg" %>
   </div>
-  <h2>583 activités à Paris ce soir</h2>
-  <div>
-    <p>Chercher</p>
+  <div class="banner-CTA">
+    <p class="banner-counter"><span>583 activités</span> à Paris ce soir</p>
+    <a class="my-btn my-btn-primary" href="#">
+      <div class="btn-content">
+        <%= svg_tag "icons/search_medium_icon.svg" %>
+        <p class="btn-font">Chercher</p>
+      </div>
+    </a>
   </div>
 </div>
