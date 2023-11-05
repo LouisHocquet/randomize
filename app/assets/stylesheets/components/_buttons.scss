@@ -1,0 +1,30 @@
+.my-btn-primary {
+  text-decoration: none;
+  background: $primary_base;
+  color: $white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 48px;
+  width: 200px;
+  border-radius: 24px;
+
+  &:hover {
+    background: $primary_dark;
+  }
+
+  .btn-content {
+    display: flex;
+    align-items: center;
+  }
+
+  svg {
+    margin: 0px 8px;
+    height: 30px;
+    width: 30px;
+  }
+
+  path {
+    fill: $white;
+  }
+}
