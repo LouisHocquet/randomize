@@ -1,0 +1,38 @@
+.how-it-works {
+  display: flex;
+  background-color: $secondary_lightiest;
+}
+
+.how-it-works-d-flex {
+  display: flex;
+  flex-direction: column;
+  margin: 72px 0 24px 0;
+}
+
+.hiw-item {
+  display: flex;
+  flex-direction: column;
+  .my-card-top {
+    font-size: 40px;
+    margin: 0;
+  }
+  .text-align-center {
+    text-align: center;
+  }
+
+  .text-align-end {
+    text-align: end;
+  }
+}
+
+.my-card-hiw {
+  align-self: stretch;
+
+  h3 {
+    color: $secondary_base;
+  }
+
+  p {
+    margin: 0;
+  }
+}
