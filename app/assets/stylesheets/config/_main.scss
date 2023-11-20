@@ -1,0 +1,8 @@
+.section {
+  min-height: 85vh;
+  width: 100%;
+
+  @include media-min($large) {
+    min-height: 90vh;
+  }
+}

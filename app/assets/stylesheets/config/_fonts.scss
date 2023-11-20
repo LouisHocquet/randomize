@@ -47,7 +47,7 @@ h3 {
   line-height: normal;
 
   @include media-min($large) {
-    // font-size: 1.25rem;
+    font-size: 1.25rem;
   }
 }
 

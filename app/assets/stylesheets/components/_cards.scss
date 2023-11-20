@@ -1,0 +1,11 @@
+
+.my-card {
+  background-color: $background;
+  border-radius: 8px;
+  box-shadow: -2px 2px 8px 0px rgba(92, 92, 92, 0.20);
+  display: flex;
+  padding: 16px;
+  flex-direction: column;
+  align-items: left;
+  margin-bottom: 16px;
+}
