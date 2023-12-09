@@ -9,37 +9,49 @@ $headers-font: "Inter", "Helvetica", "sans-serif";
 @import "colors";
 @import "breakpoints";
 
+h1, h2, h3, p {
+  color: $black;
+}
+
+h1, h2, h3 {
+  margin: 0px 0 8px 0
+}
+
+p {
+  margin: 0;
+}
+
 h1 {
   font-family: $headers-font;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-  // font-size: 2rem;
+  font-size: 1.6rem;
 
+  @include media-min($medium) {
+    font-size: 1.8rem;
+  }
   @include media-min($large) {
-    // font-size: 2.5rem;
+    font-size: 2rem;
   }
 }
 
-body h1 {
-  color: $primary_base;
-}
-
 h2 {
-  // color: $gray;
   font-family: $headers-font;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
   line-height: normal;
-  // font-size: 1.25rem;
+  font-size: 1.4rem;
 
+  @include media-min($medium) {
+    font-size: 1.6rem;
+  }
   @include media-min($large) {
-    // font-size: 1.5rem;
+    font-size: 1.8rem;
   }
 }
 
 h3 {
-  // color: $gray;
   font-family: Inter;
   // font-size: 1.125rem;
   font-style: normal;
@@ -52,7 +64,6 @@ h3 {
 }
 
 p {
-  // color: $gray;
   font-family: $body-font;
   font-style: normal;
   font-weight: 300;

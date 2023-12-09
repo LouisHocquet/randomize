@@ -2,7 +2,7 @@
 $small: 576px;
 $medium: 768px;
 $large: 992px;
-$extra_large: 1200px;
+$x_large: 1200px;
 
 @mixin media-min($_min-width) {
   @media screen and (min-width: $_min-width) {
