@@ -25,6 +25,16 @@
 .banner-CTA {
   display: flex;
   flex-direction: column;
+  width: 320px;
+  @include media-min($medium) {
+    width: 400px;
+  }
+  @include media-min($large) {
+    width: 600px;
+  }
+  .btn {
+    width: fit-content;
+  }
 }
 
 .banner-counter {
