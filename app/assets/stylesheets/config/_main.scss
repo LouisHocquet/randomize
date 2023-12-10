@@ -2,6 +2,11 @@ body, html {
   background-color: $background;
 }
 
+hr {
+  display: block;
+  border: 1px solid $primary_light;
+}
+
 .section {
   min-height: 85vh;
   width: 100%;
