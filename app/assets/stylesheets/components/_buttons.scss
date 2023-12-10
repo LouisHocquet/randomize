@@ -61,8 +61,13 @@
   }
 }
 .btn-primary, .btn-secondary {
+  transition: 0.3s;
   &:hover {
     background: $primary_dark;
+    color: $white;
+    path {
+      fill: $white;
+    }
   }
 }
 .icon-off {
