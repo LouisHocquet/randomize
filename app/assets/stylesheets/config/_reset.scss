@@ -10,7 +10,8 @@ a {
   text-decoration: none;
 }
 
-.btn {
+button {
+  &:hover { cursor: pointer; }
   border: none;
   margin: 0;
   padding: 0;
