@@ -1,0 +1,8 @@
+<div class="container">
+  <h1><%= @activity.name %></h1>
+  <% @activity.attributes.each do |attribute| %>
+  <p>
+    <%= "#{attribute.first} => #{attribute.last}" %>
+  </p>
+  <% end %>
+</div>

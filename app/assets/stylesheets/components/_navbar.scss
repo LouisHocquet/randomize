@@ -4,7 +4,8 @@
   width: 100%;
   height: 52px;
 
-  &>svg {
+  &>a>svg {
+    display: block;
     padding: 12px;
   }
 
@@ -17,7 +18,7 @@
   justify-content: space-between;
 }
 
-.navbar > svg {
+.navbar > a > svg {
   height: 36px;
   width: 36px;
 
