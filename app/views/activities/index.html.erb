@@ -1,0 +1,12 @@
+<div class="container">
+  <h1>Activities#index</h1>
+  <ul>
+    <% @activities.each do |activity| %>
+      <li>
+      <%= link_to activity_path(activity) do %>
+        <% activity.name %>
+      <% end %>
+      </li>
+    <% end %>
+  </ul>
+</div>
