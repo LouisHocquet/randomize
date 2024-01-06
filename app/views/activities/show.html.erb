@@ -1,6 +1,7 @@
 <div class="container">
   <section>
-    <%= image_tag("activities/dummy-activity-picture", alt: "Image principale de l'activité", class: "activity-image activity-image-cover") %>
+    <%# <%= image_tag("activities/dummy-activity-picture", alt: "Image principale de l'activité", class: "activity-image activity-image-cover") %>
+    <div class="activity-image activity-image-cover"></div>
     <h1><%= @activity.name %></h1>
     <div class="activity-main-infos">
       <div>
@@ -23,7 +24,8 @@
 
   <section>
     <h2>Localisation</h2>
-    <%= image_tag("activities/dummy-activity-location", alt: "Localisation de l'activité", class: "activity-image activity-image-location") %>
+    <%# <%= image_tag("activities/dummy-activity-location", alt: "Localisation de l'activité", class: "activity-image activity-image-location") %>
+    <div class="activity-image activity-image-location"></div>
   </section>
 </div>
   <div class="sticky-bottom">
