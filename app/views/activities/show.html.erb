@@ -1,8 +1,19 @@
 <div class="container">
-
   <section>
     <%= image_tag("activities/dummy-activity-picture", alt: "Image principale de l'activité", class: "activity-image activity-image-cover") %>
     <h1><%= @activity.name %></h1>
+    <div class="activity-main-infos">
+      <div>
+        <%= svg_tag "icons/location_medium_icon.svg" %>
+        <p>
+          <%= @activity.address %>
+        </p>
+      </div>
+      <div>
+        <%= svg_tag "icons/schedule_medium_icon.svg" %>
+        <p>du mardi au dimanche, de 13h à 20h</p>
+      </div>
+    </div>
   </section>
 
   <section>
@@ -13,10 +24,14 @@
   <section>
     <h2>Localisation</h2>
     <%= image_tag("activities/dummy-activity-location", alt: "Localisation de l'activité", class: "activity-image activity-image-location") %>
-    <% @activity.attributes.each do |attribute| %>
-    <p>
-      <%= "#{attribute.first} => #{attribute.last}" %>
-    </p>
-    <% end %>
   </section>
 </div>
+  <div class="sticky-bottom">
+    <%= link_to activities_path, class: "btn btn-primary" do %>
+      <div class="btn-content">
+        <%= svg_tag "icons/check_medium_icon.svg" %>
+        <span>C'est parti !</span>
+      </div>
+    <% end %>
+  </div>
+<%= render "components/footer" %>

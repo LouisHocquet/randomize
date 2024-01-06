@@ -25,3 +25,28 @@
     height: 480px;
   }
 }
+
+.activity-main-infos {
+  display: flex;
+  flex-direction: column;
+  p {
+    margin: 0 0 0 8px;
+  }
+  @include media-min($medium) {
+    p{
+      margin: 0 0 0 12px;
+    }
+  }
+  @include media-min($large) {
+    p{
+      margin: 0 0 0 16px;
+    }
+  }
+  &>div {
+    display: flex;
+    align-items: center;
+  }
+  &>div:first-of-type {
+    margin-bottom: 8px;
+  }
+}
