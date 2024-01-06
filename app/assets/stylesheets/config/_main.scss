@@ -7,7 +7,7 @@ hr {
   border: 1px solid $primary_light;
 }
 
-.section {
+.full-page {
   min-height: 85vh;
   width: 100%;
 
@@ -16,27 +16,13 @@ hr {
   }
 }
 
+section {
+  padding: $padding-bottom;
+}
+
 .container {
-  // background-color: $primary_lightiest;
   width: 100%;
   margin: auto;
   box-sizing: border-box;
-  padding: 8px 12px;
-
-  @include media-min($small) {
-    width: 576px;
-    padding: 8px 16px;
-  }
-  @include media-min($medium) {
-    width: 720px;
-    padding:  16px 24px;
-  }
-  @include media-min($large) {
-    width: 992px;
-    padding: 24px 32px
-  }
-  @include media-min($x_large) {
-    width: 1140px;
-    padding: 32px 40px;
-  }
+  padding: $padding-xy;
 }

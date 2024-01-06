@@ -1,8 +1,22 @@
 <div class="container">
-  <h1><%= @activity.name %></h1>
-  <% @activity.attributes.each do |attribute| %>
-  <p>
-    <%= "#{attribute.first} => #{attribute.last}" %>
-  </p>
-  <% end %>
+
+  <section>
+    <%= image_tag("activities/dummy-activity-picture", alt: "Image principale de l'activité", class: "activity-image activity-image-cover") %>
+    <h1><%= @activity.name %></h1>
+  </section>
+
+  <section>
+    <h2>Description</h2>
+    <p><%= simple_format(@activity.description) %></p>
+  </section>
+
+  <section>
+    <h2>Localisation</h2>
+    <%= image_tag("activities/dummy-activity-location", alt: "Localisation de l'activité", class: "activity-image activity-image-location") %>
+    <% @activity.attributes.each do |attribute| %>
+    <p>
+      <%= "#{attribute.first} => #{attribute.last}" %>
+    </p>
+    <% end %>
+  </section>
 </div>

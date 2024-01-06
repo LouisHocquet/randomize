@@ -1,0 +1,27 @@
+.activity-image-cover {
+  height: 240px;
+
+}
+
+.activity-image-location {
+  height: 200px;
+  @include media-min($medium) {
+    height: 240px;
+  }
+}
+
+.activity-image {
+  width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+  height: 240px;
+  @include media-min($medium) {
+    height: 320px;
+  }
+  @include media-min($large) {
+    height: 400px;
+  }
+  @include media-min($x_large) {
+    height: 480px;
+  }
+}
