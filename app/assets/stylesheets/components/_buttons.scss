@@ -6,7 +6,7 @@
   align-items: center;
   justify-content: center;
   height: 50px;
-  width: 100%;
+  width: -webkit-fill-available;
   border-radius: 24px;
   @include media-min($medium){
     margin: 16px auto;

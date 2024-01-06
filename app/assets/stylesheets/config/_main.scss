@@ -7,7 +7,7 @@ hr {
   border: 1px solid $primary_light;
 }
 
-.section {
+.full-page {
   min-height: 85vh;
   width: 100%;
 
@@ -16,27 +16,44 @@ hr {
   }
 }
 
-.container {
-  // background-color: $primary_lightiest;
+section {
+  padding: $padding-bottom;
+}
+
+.container{
   width: 100%;
   margin: auto;
   box-sizing: border-box;
-  padding: 8px 12px;
+  padding: $padding-xy;
 
   @include media-min($small) {
-    width: 576px;
-    padding: 8px 16px;
+    max-width: 576px;
+    // padding: $padding-xy;
   }
   @include media-min($medium) {
-    width: 720px;
-    padding:  16px 24px;
+    max-width: 720px;
+    // padding:  $padding-xy;
   }
   @include media-min($large) {
-    width: 992px;
-    padding: 24px 32px
+    max-width: 992px;
+    // padding: $padding-xy;
   }
   @include media-min($x_large) {
-    width: 1140px;
-    padding: 32px 40px;
+    max-width: 1140px;
+    // padding: $padding-xy;
   }
+}
+
+// Sticky behavior
+.sticky-bottom {
+  width: 100%;
+  position: sticky;
+  bottom: 0;
+  box-sizing: border-box;
+  background-color: $white;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  padding: 16px;
+  padding: $padding-xy;
 }
